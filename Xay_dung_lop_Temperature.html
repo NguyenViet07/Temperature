@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Temperature = function (c) {
+            this.c = c;
+            this.getc = function () {
+                return this.getc;
+            }
+            this.setC = function (c) {
+                this.c = c;
+            }
+            this.equalF = function () {
+                return 9*this.c/5 +32;
+            };
+            this.equalK = function () {
+                return this.c + 273.15;
+            };
+        }
+        let temperature = new Temperature(10)
+        document.write("nhiệt độ F là: "+ temperature.equalF() + " nhiệt độ K là: " + temperature.equalK() )
+    </script>
+
+</body>
+</html>
